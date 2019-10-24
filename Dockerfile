@@ -5,7 +5,6 @@ MAINTAINER Fabian Ruhland <Fabian.Ruhland@uni-duesseldorf.de>
 ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip" \
     ANDROID_HOME="/opt/android" \
     ANDROID_SDK_MANAGER="/opt/android/tools/bin/sdkmanager" \
-    ANDROID_TOOLS_VERSION="28.0.3" \
     NPM_VERSION="6.12.0" \
     NODEJS_VERSION="13.0.1" \
     IONIC_VERSION="5.4.4"
@@ -19,7 +18,7 @@ RUN cd /opt && \
     wget -O tools.zip ${ANDROID_SDK_URL} && \
     unzip tools.zip && \
     rm tools.zip && \
-    yes | ${ANDROID_SDK_MANAGER} "build-tools;${ANDROID_TOOLS_VERSION}"
+    yes | ${ANDROID_SDK_MANAGER} "platforms;android-28" "platforms;android-29" "build-tools;28.0.3" "build-tools;29.0.2"
 
 # Install npm, Node.js and Ionic
 RUN npm i -g npm@${NPM_VERSION} && \
