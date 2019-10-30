@@ -5,7 +5,7 @@ MAINTAINER Fabian Ruhland <Fabian.Ruhland@uni-duesseldorf.de>
 ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip" \
     ANDROID_HOME="/opt/android" \
     ANDROID_SDK_MANAGER="/opt/android/tools/bin/sdkmanager" \
-    NPM_VERSION="6.12.0" \
+    NPM_VERSION="6.12.1" \
     NODEJS_VERSION="13.0.1" \
     IONIC_VERSION="5.4.4"
 
