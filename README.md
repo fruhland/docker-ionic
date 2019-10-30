@@ -1,6 +1,8 @@
 # docker-ionic
 Build environment for Ionic apps
 
+[![DockerHub](https://img.shields.io/docker/pulls/ruhland/ionic)](https://hub.docker.com/r/ruhland/ionic)
+
 ## Description
 This container is based on `Ubuntu 18.04` and has `npm`, `nodejs` and `ionic` pre-installed. `Wine` is also installed (x86_64 and i386), so it is possible to build apps with `electron-builder` for Linux/Windows.
 
