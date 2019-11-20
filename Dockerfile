@@ -10,7 +10,7 @@ ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-43
     IONIC_VERSION="5.4.6"
 
 # Install necessary packages
-RUN dpkg --add-architecture i386 && apt-get update && apt-get -y install apt-utils && apt-get install -y wget curl unzip git npm openjdk-8-jdk wine-stable
+RUN dpkg --add-architecture i386 && apt-get update && apt-get -y install apt-utils && apt-get install -y wget curl lftp unzip git npm openjdk-8-jdk wine-stable
 
 # Install Android SDK
 RUN cd /opt && \
