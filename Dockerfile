@@ -7,7 +7,7 @@ ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-43
     ANDROID_SDK_MANAGER="/opt/android/tools/bin/sdkmanager" \
     NPM_VERSION="6.13.1" \
     NODEJS_VERSION="13.3.0" \
-    IONIC_VERSION="5.4.9"
+    IONIC_VERSION="5.4.12"
 
 # Install necessary packages
 RUN dpkg --add-architecture i386 && apt-get update && apt-get -y install apt-utils && apt-get install -y wget curl lftp unzip git npm openjdk-8-jdk wine-stable
