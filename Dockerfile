@@ -6,8 +6,8 @@ ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-43
     ANDROID_HOME="/opt/android" \
     ANDROID_SDK_MANAGER="/opt/android/tools/bin/sdkmanager" \
     NPM_VERSION="6.14.2" \
-    NODEJS_VERSION="13.9.0" \
-    IONIC_VERSION="6.2.0"
+    NODEJS_VERSION="13.10.1" \
+    IONIC_VERSION="6.2.1"
 
 # Install necessary packages
 RUN dpkg --add-architecture i386 && apt-get update && apt-get -y install apt-utils && apt-get install -y wget curl lftp unzip git npm openjdk-8-jdk wine-stable
@@ -18,7 +18,7 @@ RUN cd /opt && \
     wget -O tools.zip ${ANDROID_SDK_URL} && \
     unzip tools.zip && \
     rm tools.zip && \
-    yes | ${ANDROID_SDK_MANAGER} "platforms;android-28" "platforms;android-29" "build-tools;28.0.3" "build-tools;29.0.2"
+    yes | ${ANDROID_SDK_MANAGER} "platforms;android-28" "platforms;android-29" "build-tools;28.0.3" "build-tools;29.0.3"
 
 # Install npm, Node.js and Ionic
 RUN npm i -g npm@${NPM_VERSION} && \
