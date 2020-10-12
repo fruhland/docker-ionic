@@ -5,9 +5,9 @@ MAINTAINER Fabian Ruhland <Fabian.Ruhland@uni-duesseldorf.de>
 ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip" \
     ANDROID_HOME="/opt/android" \
     ANDROID_SDK_MANAGER="/opt/android/tools/bin/sdkmanager" \
-    NPM_VERSION="6.14.5" \
-    NODEJS_VERSION="14.4.0" \
-    IONIC_VERSION="6.10.0"
+    NPM_VERSION="6.14.8" \
+    NODEJS_VERSION="14.13.1" \
+    IONIC_VERSION="6.11.11"
 
 # Install necessary packages
 RUN dpkg --add-architecture i386 && apt-get update && apt-get -y install apt-utils && apt-get install -y wget curl lftp unzip git npm openjdk-8-jdk wine-stable
