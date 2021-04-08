@@ -5,8 +5,8 @@ MAINTAINER Fabian Ruhland <Fabian.Ruhland@uni-duesseldorf.de>
 ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip" \
     ANDROID_HOME="/opt/android" \
     ANDROID_SDK_MANAGER="/opt/android/cmdline-tools/bin/sdkmanager" \
-    NODEJS_VERSION="15.12.0" \
-    NPM_VERSION="7.6.3" \
+    NODEJS_VERSION="15.14.0" \
+    NPM_VERSION="7.8.0" \
     IONIC_VERSION="6.13.1"
 
 # Install necessary packages
