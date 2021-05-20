@@ -5,9 +5,9 @@ MAINTAINER Fabian Ruhland <Fabian.Ruhland@uni-duesseldorf.de>
 ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip" \
     ANDROID_HOME="/opt/android" \
     ANDROID_SDK_MANAGER="/opt/android/cmdline-tools/bin/sdkmanager" \
-    NODEJS_VERSION="16.1.0" \
-    NPM_VERSION="7.11.2" \
-    IONIC_VERSION="6.14.1"
+    NODEJS_VERSION="16.2.0" \
+    NPM_VERSION="7.13.0" \
+    IONIC_VERSION="6.15.0"
 
 # Install necessary packages
 RUN dpkg --add-architecture i386 && \
@@ -27,5 +27,3 @@ RUN npm i -g n && \
     apt -y autoremove && \
     n ${NODEJS_VERSION} && \
     /usr/local/bin/npm i -g npm@${NPM_VERSION} @ionic/cli@${IONIC_VERSION}
-
-CMD sleep 3600
