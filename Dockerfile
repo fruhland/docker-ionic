@@ -6,8 +6,8 @@ ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/commandlinetools-l
     ANDROID_HOME="/opt/android" \
     ANDROID_SDK_MANAGER="/opt/android/cmdline-tools/bin/sdkmanager" \
     NODEJS_VERSION="16.2.0" \
-    NPM_VERSION="7.13.0" \
-    IONIC_VERSION="6.15.0"
+    NPM_VERSION="7.14.0" \
+    IONIC_VERSION="6.16.1"
 
 # Install necessary packages
 RUN dpkg --add-architecture i386 && \
